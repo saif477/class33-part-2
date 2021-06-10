@@ -1,0 +1,140 @@
+.vaktor {
+	border-bottom: 3px solid rgb(81, 15, 236);
+	max-width: 50px;
+	margin-top: 26px;
+	margin-bottom: 26px;
+}
+.vaktor-bd {
+	border-bottom: 3px solid white;
+	max-width: 50px;
+	margin-top: 14px;
+	margin-bottom: 14px;
+	margin-left: 368px;
+}
+
+.megna h6{
+    color: blue;
+    margin-top: 70px;
+}
+.megna h1{
+    font-weight: 600;
+}
+.megna p{
+    color: #767676;
+    margin-bottom: 70px;
+}
+
+/* features */
+
+
+.features-item h4 {
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+.saif{
+    margin: auto;
+}
+.features-item p{
+    font-size: 16px;
+}
+.features-item {
+	background: rgb(229, 241, 251);
+	padding: 30px;
+	margin-bottom: 30px;
+	border-radius: 15px;
+    position: relative;
+    transition: .5s;
+}
+.features-item:hover{
+    transform: translateY(-15px);
+    background: blue;
+    color: #fff;
+}
+
+
+.features-item:hover .ft-icon i{
+    color:blue ;
+	background:#fff ;
+    transition: .5s;
+}
+
+
+
+.features-item .ft-icon{}
+.features-item .ft-icon i {
+	font-size: 30px;
+	color: rgb(241, 231, 231);
+	background: rgb(42, 6, 247);
+	height: 70px;
+	width: 70px;
+	line-height: 70px;
+	border-radius: 45px 45px 45px 0px;
+    text-align: center;
+}
+
+/* why-choose-us */
+
+.why-choose-us{
+	background: url(./img/video-bg.jpg);
+	background-size: cover;
+	height: 600px;
+	position: relative;
+	z-index: 9;
+}
+.why-choose-us::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+	z-index: -1;
+}
+.nepal {
+	margin-top: 150px;
+	color: #fff;
+	max-width: 793px;
+	margin-left: 134px;
+}
+
+.play-animation-btn {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	background: #fff;
+	line-height: 100px;
+	font-size: 30px;
+	text-align: center;
+	border-radius: 50%;
+	position: relative;
+	margin-top: 80px;
+}
+
+.play-animation-btn::before {
+	content: "";
+	width: 100px;
+	height: 100px;
+	background: rgb(212, 134, 134);
+	top: 0;
+	left: 0;
+	position: absolute;
+	border-radius: 50%;
+	animation: playbtn 1.6s ease-out infinite;
+	z-index: 1;
+}
+@keyframes playbtn{
+	0%,30%{
+		transform: scale(0);
+		opacity: 1;
+	}
+	50%{
+		transform: scale(1.5);
+		opacity: .7;
+	}
+	100%{
+		transform: scale(2);
+		opacity: 0;
+	}
+}
